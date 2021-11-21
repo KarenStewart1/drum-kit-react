@@ -1,0 +1,15 @@
+.Drums button {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid 4px black;
+  color: white;
+  font-family: "Courier Prime", monospace;
+  font-size: 30px;
+  height: 80px;
+  margin: 10px 8px 0px 8px;
+  padding-top: 5px;
+  width: 100px;
+}
+.Drums .sound {
+  color: #b69f43;
+  font-size: 15px;
+}

@@ -1,0 +1,8 @@
+import React from "react";
+
+export default function Drums() {
+  return (
+    <div className="Drums">
+    </div>
+  );
+}

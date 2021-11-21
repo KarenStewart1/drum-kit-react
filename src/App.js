@@ -4,7 +4,7 @@ import Drums from "./Drums";
 function App() {
   return (
     <div className="App">
-      <div class="row drums">
+      <div className="row drums">
         <Drums />
       </div>
     </div>

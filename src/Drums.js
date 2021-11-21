@@ -13,11 +13,21 @@ export default function Drums() {
     { sound: "TOM", letter: "K" },
     { sound: "TINK", letter: "L" },
   ];
+
+  function handleClick(event) {
+    console.log(event.target);
+    let clickedButton = event.target;
+    clickedButton.classList.add("active-button");
+    setTimeout(function () {
+      clickedButton.classList.remove("active-button");
+    }, 70);
+  }
+
   return (
     <div className="Drums">
       {drumArray.map(function (drum, index) {
         return (
-          <button className="button" key={index}>
+          <button className="button" onClick={handleClick} key={index}>
             {drum.letter}
             <div className="sound">{drum.sound}</div>
           </button>

@@ -29,7 +29,7 @@ export default function Drums() {
         return (
           <button className="button" onClick={handleClick} key={index}>
             {drum.letter}
-            <div className="sound">{drum.sound}</div>
+            <div className="sound">{drum.word}</div>
           </button>
         );
       })}

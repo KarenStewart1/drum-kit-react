@@ -15,7 +15,6 @@ export default function Drums() {
   ];
 
   function handleClick(event) {
-    console.log(event.target);
     let clickedButton = event.target;
     clickedButton.classList.add("active-button");
     setTimeout(function () {

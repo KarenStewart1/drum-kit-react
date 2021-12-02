@@ -9,8 +9,8 @@ export default function Drums() {
     { sound: "./sounds/openhat.wav", word: "openhat", letter: "f" },
     { sound: "./sounds/boom.wav", word: "boom", letter: "g" },
     { sound: "./sounds/ride.wav", word: "ride", letter: "h" },
-    { sound: "./sounds/snare.wav", word: "snare", letter: "i" },
-    { sound: "./sounds/tom.wav", word: "tom", letter: "j" },
+    { sound: "./sounds/snare.wav", word: "snare", letter: "j" },
+    { sound: "./sounds/tom.wav", word: "tom", letter: "k" },
     { sound: "./sounds/tink.wav", word: "tink", letter: "l" },
   ];
 
@@ -24,14 +24,16 @@ export default function Drums() {
 
   return (
     <div className="Drums">
-      {drumArray.map(function (drum, index) {
-        return (
-          <button className="button" onClick={handleClick} key={index}>
-            {drum.letter}
-            <div className="sound">{drum.word}</div>
-          </button>
-        );
-      })}
+      <div className="row">
+        {drumArray.map(function (drum, index) {
+          return (
+            <button className="button" onClick={handleClick} key={index}>
+              {drum.letter}
+              <div className="sound">{drum.word}</div>
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }

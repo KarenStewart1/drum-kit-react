@@ -1,27 +1,32 @@
+.Drums .row {
+  margin-top: 580px;
+  text-align: center;
+}
+
 .Drums button {
   background-color: rgba(0, 0, 0, 0.8);
   border: solid 4px black;
   color: white;
-  font-family: "Courier Prime", monospace;
+  font-family: var(--primary-font);
   font-size: 30px;
   height: 80px;
-  margin: 10px 8px 0px 8px;
+  margin: 10px 10px 0;
   padding-top: 5px;
   text-transform: capitalize;
   width: 100px;
 }
 .Drums .sound {
-  color: #b69f43;
+  color: var(--primary-color);
   font-size: 15px;
   text-transform: uppercase;
 }
-.active-button {
+.Drums .active-button {
   background-color: rgba(0, 0, 0, 0.9);
   border-color: orange;
   border-radius: 6px;
   box-shadow: inset 0px 0px 2px 2px #aaa, 2px 2px 4px 0px #eee;
   font-size: 35px;
   height: 95px;
-  margin: 0 3px 0 3px;
-  width: 110px;
+  margin: 0 3px;
+  width: 114px;
 }

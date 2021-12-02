@@ -1,4 +1,26 @@
 .App .drums {
-  margin-top: 650px;
+  margin-top: 580px;
   text-align: center;
+}
+.App .instructions {
+  background-color: whitesmoke;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: bold;
+  margin: 80px auto 0 auto;
+  max-width: 400px;
+  padding: 15px;
+  text-align: center;
+}
+
+.App .credits {
+  font-size: 12px;
+  font-weight: normal;
+  padding-top: 10px;
+}
+
+.App .creedits a {
+  color: var(--primary-color);
 }

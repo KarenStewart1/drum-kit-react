@@ -14,14 +14,17 @@ export default function Drums() {
     { sound: "./sounds/tink.wav", word: "tink", letter: "l" },
   ];
 
-  function handleClick(event) {
-    let clickedButton = event.target;
-    clickedButton.classList.add("active-button");
     setTimeout(function () {
-      clickedButton.classList.remove("active-button");
     }, 70);
   }
 
+
+  function handleClick(event) {
+    event.preventDefault();
+    let clickedLetter = event.target.innerText.toLowerCase();
+    playSound(clickedLetter);
+    changeButtonStyling(event.target);
+  }
   return (
     <div className="Drums">
       <div className="row">

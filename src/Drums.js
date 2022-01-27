@@ -28,7 +28,10 @@ export default function Drums() {
     audioFile.play();
   }
 
+  function changeButtonStyling(button) {
+    button.className = "button active-button";
     setTimeout(function () {
+      button.className = "button";
     }, 70);
   }
 

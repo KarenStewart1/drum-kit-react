@@ -32,6 +32,13 @@ export default function Drums() {
     }, 70);
   }
 
+  function handleKeyPress(event) {
+    let keyPressed = event.key;
+    playSound(keyPressed);
+
+  }
+
+  window.addEventListener("keydown", handleKeyPress);
 
   function handleClick(event) {
     event.preventDefault();

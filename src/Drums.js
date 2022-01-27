@@ -14,6 +14,11 @@ export default function Drums() {
     { sound: "./sounds/tink.wav", word: "tink", letter: "l" },
   ];
 
+  function playSound(letter) {
+    let audioFile = new Audio(drumArray[letter].sound);
+    audioFile.play();
+  }
+
     setTimeout(function () {
     }, 70);
   }

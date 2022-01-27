@@ -2,17 +2,17 @@ import React from "react";
 import "./Drums.css";
 
 export default function Drums() {
-  let drumArray = [
-    { sound: "./sounds/clap.wav", word: "clap", letter: "a" },
-    { sound: "./sounds/Hihat.wav", word: "Hihat", letter: "s" },
-    { sound: "./sounds/kick.wav", word: "kick", letter: "d" },
-    { sound: "./sounds/openhat.wav", word: "openhat", letter: "f" },
-    { sound: "./sounds/boom.wav", word: "boom", letter: "g" },
-    { sound: "./sounds/ride.wav", word: "ride", letter: "h" },
-    { sound: "./sounds/snare.wav", word: "snare", letter: "j" },
-    { sound: "./sounds/tom.wav", word: "tom", letter: "k" },
-    { sound: "./sounds/tink.wav", word: "tink", letter: "l" },
-  ];
+  const drumArray = {
+    a: { sound: clap, word: "clap", letter: "a" },
+    s: { sound: hihat, word: "hihat", letter: "s" },
+    d: { sound: kick, word: "kick", letter: "d" },
+    f: { sound: openhat, word: "openhat", letter: "f" },
+    g: { sound: boom, word: "boom", letter: "g" },
+    h: { sound: ride, word: "ride", letter: "h" },
+    j: { sound: snare, word: "snare", letter: "j" },
+    k: { sound: tom, word: "tom", letter: "k" },
+    l: { sound: tink, word: "tink", letter: "l" },
+  };
 
   function playSound(letter) {
     let audioFile = new Audio(drumArray[letter].sound);

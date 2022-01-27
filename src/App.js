@@ -10,13 +10,17 @@ function App() {
         to get the corresponding sound of the drum.
         <div className="credits">
           Coded by{" "}
-          <a href="https://admiring-goldstine-ca62c9.netlify.app/">
+          <a
+            href="https://admiring-goldstine-ca62c9.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            title="Github"
+          >
             Karen Stewart
           </a>
         </div>
       </div>
       <Drums />
-      {/* <Sound /> */}
     </div>
   );
 }

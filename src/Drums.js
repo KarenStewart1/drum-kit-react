@@ -20,6 +20,7 @@ export default function Drums() {
     { soundFile: ride, word: "ride", letter: "h" },
     { soundFile: snare, word: "snare", letter: "j" },
     { soundFile: tom, word: "tom", letter: "k" },
+    { soundFile: tink, word: "tink", letter: "l" },
   ];
 
   function playSound(letter) {

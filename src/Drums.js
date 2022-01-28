@@ -53,14 +53,17 @@ export default function Drums() {
   return (
     <div className="Drums">
       <div className="row">
-        {drumArray.map(function (drum, index) {
-          return (
-            <button className="button" onClick={handleClick} key={index}>
-              {drum.letter}
-              <div className="sound">{drum.word}</div>
-            </button>
-          );
-        })}
+        {drumArray.map((object, index) => (
+          <button
+            className="button"
+            id={object.letter}
+            key={index}
+            onClick={handleClick}
+          >
+            {object.letter.toUpperCase()}
+            <div className="sound">{object.word}</div>
+          </button>
+        ))}
       </div>
     </div>
   );

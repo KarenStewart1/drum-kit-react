@@ -12,20 +12,19 @@ import tink from "./sounds/tink.wav";
 
 export default function Drums() {
   const drumArray = [
-    { sound: clap, word: "clap", letter: "a" },
-    { sound: hihat, word: "hihat", letter: "s" },
-    { sound: kick, word: "kick", letter: "d" },
-    { sound: openhat, word: "openhat", letter: "f" },
-    { sound: boom, word: "boom", letter: "g" },
-    { sound: ride, word: "ride", letter: "h" },
-    { sound: snare, word: "snare", letter: "j" },
-    { sound: tom, word: "tom", letter: "k" },
-    { sound: tink, word: "tink", letter: "l" },
+    { soundFile: clap, word: "clap", letter: "a" },
+    { soundFile: hihat, word: "hihat", letter: "s" },
+    { soundFile: kick, word: "kick", letter: "d" },
+    { soundFile: openhat, word: "openhat", letter: "f" },
+    { soundFile: boom, word: "boom", letter: "g" },
+    { soundFile: ride, word: "ride", letter: "h" },
+    { soundFile: snare, word: "snare", letter: "j" },
+    { soundFile: tom, word: "tom", letter: "k" },
   ];
 
   function playSound(letter) {
     let audioFile = new Audio(
-      drumArray.filter((each) => each.letter === letter)[0].sound
+      drumArray.filter((each) => each.letter === letter)[0].soundFile
     );
     audioFile.play();
   }
@@ -61,7 +60,7 @@ export default function Drums() {
             onClick={handleClick}
           >
             {object.letter.toUpperCase()}
-            <div className="sound">{object.word}</div>
+            <div className="sound-word">{object.word}</div>
           </button>
         ))}
       </div>

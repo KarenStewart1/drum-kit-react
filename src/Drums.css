@@ -15,7 +15,7 @@
   text-transform: capitalize;
   width: 100px;
 }
-.Drums .sound {
+.Drums .sound-word {
   color: var(--primary-color);
   font-size: 15px;
   text-transform: uppercase;

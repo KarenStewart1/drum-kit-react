@@ -11,20 +11,22 @@ import tom from "./sounds/tom.wav";
 import tink from "./sounds/tink.wav";
 
 export default function Drums() {
-  const drumArray = {
-    a: { sound: clap, word: "clap", letter: "a" },
-    s: { sound: hihat, word: "hihat", letter: "s" },
-    d: { sound: kick, word: "kick", letter: "d" },
-    f: { sound: openhat, word: "openhat", letter: "f" },
-    g: { sound: boom, word: "boom", letter: "g" },
-    h: { sound: ride, word: "ride", letter: "h" },
-    j: { sound: snare, word: "snare", letter: "j" },
-    k: { sound: tom, word: "tom", letter: "k" },
-    l: { sound: tink, word: "tink", letter: "l" },
-  };
+  const drumArray = [
+    { sound: clap, word: "clap", letter: "a" },
+    { sound: hihat, word: "hihat", letter: "s" },
+    { sound: kick, word: "kick", letter: "d" },
+    { sound: openhat, word: "openhat", letter: "f" },
+    { sound: boom, word: "boom", letter: "g" },
+    { sound: ride, word: "ride", letter: "h" },
+    { sound: snare, word: "snare", letter: "j" },
+    { sound: tom, word: "tom", letter: "k" },
+    { sound: tink, word: "tink", letter: "l" },
+  ];
 
   function playSound(letter) {
-    let audioFile = new Audio(drumArray[letter].sound);
+    let audioFile = new Audio(
+      drumArray.filter((each) => each.letter === letter)[0].sound
+    );
     audioFile.play();
   }
 

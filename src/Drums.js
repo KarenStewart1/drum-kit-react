@@ -47,9 +47,8 @@ export default function Drums() {
 
   function handleClick(event) {
     event.preventDefault();
-    let clickedLetter = event.target.innerText.toLowerCase();
-    playSound(clickedLetter);
-    changeButtonStyling(event.target);
+    playSound(event.currentTarget.id);
+    changeButtonStyling(event.currentTarget);
   }
   return (
     <div className="Drums">

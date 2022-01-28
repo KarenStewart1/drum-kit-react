@@ -38,18 +38,18 @@ export default function Drums() {
   }
 
   function handleKeyPress(event) {
-    let keyPressed = event.key;
-    playSound(keyPressed);
-
+    playSound(event.key);
+    let correspondingButton = document.getElementById(`${event.key}`);
+    changeButtonStyling(correspondingButton);
   }
-
-  window.addEventListener("keydown", handleKeyPress);
 
   function handleClick(event) {
     event.preventDefault();
     playSound(event.currentTarget.id);
     changeButtonStyling(event.currentTarget);
   }
+  window.addEventListener("keydown", handleKeyPress);
+
   return (
     <div className="Drums">
       <div className="row">

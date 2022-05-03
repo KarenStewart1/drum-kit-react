@@ -1,6 +1,5 @@
-import "./App.css";
+import "./styling/App.css";
 import Drums from "./Drums";
-// import Sound from "./Sound";
 
 function App() {
   return (
@@ -24,5 +23,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

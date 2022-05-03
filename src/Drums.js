@@ -1,5 +1,5 @@
 import React from "react";
-import "./Drums.css";
+import "./styling/Drums.css";
 import clap from "./sounds/clap.wav";
 import hihat from "./sounds/hihat.wav";
 import kick from "./sounds/kick.wav";

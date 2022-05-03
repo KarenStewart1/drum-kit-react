@@ -1,7 +1,13 @@
-.App .drums {
-  margin-top: 580px;
-  text-align: center;
+:root {
+  --primary-font: "Courier Prime", monospace;
+  --primary-color: #b69f43;
 }
+
+body {
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+}
+
 .App .instructions {
   background-color: whitesmoke;
   border: 2px solid var(--primary-color);

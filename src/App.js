@@ -1,12 +1,12 @@
 import "./styling/App.css";
 import Drums from "./Drums";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="instructions">
-        Press the keys on your keyboard or use your mouse to click the buttons
-        to get the corresponding sound of the drum.
+        Press the keys on your keyboard or click the buttons to get the
+        corresponding drum sound.
         <div className="credits">
           Coded by{" "}
           <a

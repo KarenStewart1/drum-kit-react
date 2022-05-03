@@ -25,7 +25,7 @@ export default function Drums() {
 
   function playSound(letter) {
     let audioFile = new Audio(
-      drumArray.filter((each) => each.letter === letter)[0].soundFile
+      drumArray.filter((drum) => drum.letter === letter)[0].soundFile
     );
     audioFile.play();
   }
@@ -38,9 +38,15 @@ export default function Drums() {
   }
 
   function handleKeyPress(event) {
-    playSound(event.key);
-    let correspondingButton = document.getElementById(`${event.key}`);
-    changeButtonStyling(correspondingButton);
+    const letter = drumArray
+      .map((each) => each.letter)
+      .filter((each) => each === event.key);
+
+    if (letter.length > 0) {
+      playSound(event.key);
+      let correspondingButton = document.getElementById(`${event.key}`);
+      changeButtonStyling(correspondingButton);
+    }
   }
 
   function handleClick(event) {
@@ -48,6 +54,7 @@ export default function Drums() {
     playSound(event.currentTarget.id);
     changeButtonStyling(event.currentTarget);
   }
+
   window.addEventListener("keydown", handleKeyPress);
 
   return (

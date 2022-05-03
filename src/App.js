@@ -10,10 +10,10 @@ function App() {
         <div className="credits">
           Coded by{" "}
           <a
-            href="https://admiring-goldstine-ca62c9.netlify.app/"
+            href="https://karenstewart.nl"
             target="_blank"
             rel="noreferrer"
-            title="Github"
+            title="My Portfolio"
           >
             Karen Stewart
           </a>
